@@ -1,0 +1,15 @@
+.classpath
+.project
+*.mpr.bak
+*.mpr.lock
+project-settings.user.json
+deployment
+theme-cache/
+themesource/*
+!themesource/atlas_core/
+javasource/system
+javasource/*/datasets
+javasource/*/proxies
+*.launch
+userlib
+GPUCache

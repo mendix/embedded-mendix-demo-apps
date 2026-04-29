@@ -1,0 +1,33 @@
+// Theme options
+$brand-logo: false;
+$font-family-import: false;
+$form-input-style: default;
+$btn-bordered: false; // Default value false, set to true if you want this effect
+
+body {
+    --body-variable: "body-value";
+}
+
+body[data-test-attr="active"] {
+    --body-attr-variable: "body-attr-active";
+}
+
+html[data-test-html-attr="enabled"] {
+    --html-attr-variable: "html-attr-enabled";
+}
+
+:root {
+    --root-variable: "root-value";
+
+    /* Brand Colors */
+    --brand-primary: #264ae5;
+    --brand-success: #16aa16;
+    --brand-warning: #cd8501;
+    --brand-danger: #ea3337;
+    --brand-default: color-mix(in srgb, var(--brand-primary) 10%, #e7e7e9);
+    --gray: #b8babf;
+}
+
+// Ensures backwards compatibility. Set to false if the theme variables is not using CSS variables (e.g. --brand-primary).
+$use-css-variables: true;
+@import "../../themesource/atlas_core/web/variables";

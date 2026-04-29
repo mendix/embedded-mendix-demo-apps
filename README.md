@@ -6,6 +6,10 @@ This repo demonstrates Mendix running in embedded mode inside three self-contain
 - `demos/vue-host/`
 - `demos/vanilla-js-host/`
 
+If you are looking for a step-by-step guide to building the embedding component itself, see:
+
+- `docs/create-embedded-mendix-component.md`
+
 It also includes the Mendix project used by those hosts:
 
 - `mendix-project/`

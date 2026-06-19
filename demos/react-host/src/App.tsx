@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 const DEFAULT_REMOTE_URL = "http://localhost:8081";
 
 type EmbeddedModule = {
-    render: (rootNode: Element | null, options: { remoteUrl: string; minHeight: string }) => Promise<() => void>;
+    render: (rootNode: Element | null, options: { remoteUrl: string; minHeight: string, parameters: Record<string, any> }) => Promise<() => void>;
 };
 
 const metrics = [
@@ -47,6 +47,9 @@ export default function App() {
                 unmountRef.current = await moduleRef.current.render(hostRef.current, {
                     remoteUrl: `${remoteUrl}/`,
                     minHeight: "620px",
+                    parameters: {
+                        Name: "React"
+                    }
                 });
 
                 if (isActive) {

@@ -35,6 +35,9 @@ onMounted(async () => {
         unmountEmbeddedApp = await embeddedModule.value.render(embeddedHost.value, {
             remoteUrl: `${remoteUrl}/`,
             minHeight: "640px",
+            parameters: {
+                Name: "Vue"
+            }
         });
 
         status.value = "Embedded Mendix app connected";

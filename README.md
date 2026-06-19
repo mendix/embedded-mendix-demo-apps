@@ -8,7 +8,8 @@ This repo demonstrates Mendix running in embedded mode inside three self-contain
 
 If you are looking for a step-by-step guide to building the embedding component itself, see:
 
-- `docs/create-embedded-mendix-component.md`
+- the including guide `docs/create-embedded-mendix-component.md`
+- or the [official Mendix Docs](https://docs.mendix.com/refguide/mendix-client/embedding-the-client/) on embedding the client
 
 It also includes the Mendix project used by those hosts:
 

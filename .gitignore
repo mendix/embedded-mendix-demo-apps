@@ -1,3 +1,6 @@
 node_modules/
 dist/
 .DS_Store
+
+mendix-project/deployment/
+mendix-project/.mendix-cache/
